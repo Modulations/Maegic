@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "maegic",
+  "version": "${version}",
+
+  "name": "Maegic",
+  "description": "hell on earth",
+  "authors": [
+    "Hertz"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/maegic/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.hertz.maegic.Main"
+    ]
+  },
+  "mixins": [
+    "maegic.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
