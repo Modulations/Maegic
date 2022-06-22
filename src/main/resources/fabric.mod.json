@@ -19,7 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.hertz.maegic.Main"
+      "net.hertz.maegic.Maegic"
+    ],
+    "client": [
+      "net.hertz.maegic.MaegicClientMod"
     ]
   },
   "mixins": [

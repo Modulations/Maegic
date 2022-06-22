@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "maegic:block/assembly_table_down",
+    "up": "maegic:block/assembly_table_up",
+    "north": "maegic:block/assembly_table_north",
+    "south": "maegic:block/assembly_table_south",
+    "east": "maegic:block/assembly_table_east",
+    "west": "maegic:block/assembly_table_west",
+    "particle": "maegic:block/assembly_table_north"
+  }
+}
