@@ -1,11 +1,15 @@
 {
   "item.maegic.soul_dust": "Soul Dust",
+  "item.maegic.blueprint": "Blueprint",
+
+  "item.maegic.cybereyes": "Cybereyes",
 
 
   "block.maegic.soul_shit": "Soul Shit",
   "block.maegic.assembly_table": "Assembly Table",
 
-  "container.assembly": "Assembly Table",
+  "container.maegic.assembly": "Assembly Table",
+  "container.maegic.blueprint_analyzer": "Blueprint Analyzer",
 
   "itemGroup.maegic.maegic": "Maegic"
 }

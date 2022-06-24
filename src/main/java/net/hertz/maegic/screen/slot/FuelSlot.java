@@ -13,8 +13,8 @@ public class FuelSlot extends Slot {
 
     @Override
     public boolean canInsert(ItemStack stack) {
-        return true;
-        //return AbstractFurnaceBlockEntity.canUseAsFuel(stack) || FuelSlot.isBucket(stack);
+        //return true;
+        return AbstractFurnaceBlockEntity.canUseAsFuel(stack) || FuelSlot.isBucket(stack);
     }
 
     @Override

@@ -6,8 +6,10 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class MaterialItem {
+public class MaegicItem {
     public static final Item SOUL_DUST = registerItem("soul_dust", new Item(new FabricItemSettings().group(MaegicItemGroup.MAEGIC)));
+    public static final Item BLUEPRINT = registerItem("blueprint", new Item(new FabricItemSettings().group(MaegicItemGroup.MAEGIC)));
+    //public static final Item CYBEREYES = registerItem("cybereyes", new Item(new FabricItemSettings().group(MaegicItemGroup.MAEGIC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Maegic.MOD_ID, name), item);

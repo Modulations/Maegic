@@ -1,0 +1,14 @@
+{
+  "type": "maegic:assembly_table",
+  "ingredients": [
+    {
+      "item": "maegic:soul_dust"
+    },
+    {
+      "item": "maegic:soul_dust"
+    }
+  ],
+  "output": {
+    "item": "maegic:soul_shit"
+  }
+}

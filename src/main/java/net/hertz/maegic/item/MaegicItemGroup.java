@@ -8,5 +8,5 @@ import net.minecraft.util.Identifier;
 
 public class MaegicItemGroup {
     public static final ItemGroup MAEGIC = FabricItemGroupBuilder.build(new Identifier(Maegic.MOD_ID, "maegic"),
-            () -> new ItemStack(MaterialItem.SOUL_DUST));
+            () -> new ItemStack(MaegicItem.SOUL_DUST));
 }
