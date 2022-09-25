@@ -1,7 +1,7 @@
 package net.hertz.maegic;
 
 import net.fabricmc.api.ModInitializer;
-import net.hertz.maegic.block.Blocks;
+import net.hertz.maegic.block.MaegicBlocks;
 import net.hertz.maegic.block.EntityBlock;
 import net.hertz.maegic.item.MaegicItem;
 import net.hertz.maegic.recipe.Recipes;
@@ -17,7 +17,7 @@ public class Maegic implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		MaegicItem.registerItems();
-		Blocks.registerBlocks();
+		MaegicBlocks.registerBlocks();
 
 		EntityBlock.registerAllBlockEntities();
 		MaegicScreenHandlers.registerAllScreenHandlers();

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "maegic:block/surgery_block_top",
+    "up": "maegic:block/surgery_block_top",
+    "north": "maegic:block/surgery_block_side",
+    "south": "maegic:block/surgery_block_side",
+    "east": "maegic:block/surgery_block_side",
+    "west": "maegic:block/surgery_block_side",
+    "particle": "maegic:block/surgery_block_top"
+  }
+}

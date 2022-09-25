@@ -7,9 +7,11 @@
 
   "block.maegic.soul_shit": "Soul Shit",
   "block.maegic.assembly_table": "Assembly Table",
+  "block.maegic.surgery_block": "Robosurgeon",
 
   "container.maegic.assembly": "Assembly Table",
   "container.maegic.blueprint_analyzer": "Blueprint Analyzer",
+  "container.maegic.surgery_block": "Robosurgeon",
 
   "itemGroup.maegic.maegic": "Maegic"
 }

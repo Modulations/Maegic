@@ -8,11 +8,17 @@ import net.minecraft.util.registry.Registry;
 
 public class EntityBlock {
     public static BlockEntityType<AssemblyTableBlockEntity> ASSEMBLY_TABLE;
+    public static BlockEntityType<SurgeryBlockEntity> SURGERY_BLOCK;
 
     public static void registerAllBlockEntities() {
         ASSEMBLY_TABLE = Registry.register(Registry.BLOCK_ENTITY_TYPE,
                 new Identifier(Maegic.MOD_ID, "assembly_table"),
                 FabricBlockEntityTypeBuilder.create(AssemblyTableBlockEntity::new,
-                        Blocks.ASSEMBLY_TABLE).build(null));
+                        MaegicBlocks.ASSEMBLY_TABLE).build(null));
+
+        SURGERY_BLOCK = Registry.register(Registry.BLOCK_ENTITY_TYPE,
+                new Identifier(Maegic.MOD_ID, "surgery_block"),
+                FabricBlockEntityTypeBuilder.create(SurgeryBlockEntity::new,
+                        MaegicBlocks.SURGERY_BLOCK).build(null));
     }
 }

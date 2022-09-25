@@ -12,12 +12,14 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class Blocks {
+public class MaegicBlocks {
 
     public static final Block SOUL_SHIT = registerBlock("soul_shit",
             new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT)), MaegicItemGroup.MAEGIC);
     public static final Block ASSEMBLY_TABLE = registerBlock("assembly_table",
             new AssemblyTableBlock(FabricBlockSettings.of(Material.METAL)), MaegicItemGroup.MAEGIC);
+    public static final Block SURGERY_BLOCK = registerBlock("surgery_block",
+            new SurgeryBlock(FabricBlockSettings.of(Material.METAL)), MaegicItemGroup.MAEGIC);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

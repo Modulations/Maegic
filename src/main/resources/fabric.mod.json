@@ -22,7 +22,7 @@
       "net.hertz.maegic.Maegic"
     ],
     "client": [
-      "net.hertz.maegic.MaegicClientMod"
+      "net.hertz.maegic.MaegicClient"
     ]
   },
   "mixins": [
