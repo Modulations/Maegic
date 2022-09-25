@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.hertz.maegic.block.MaegicBlocks;
 import net.hertz.maegic.block.EntityBlock;
 import net.hertz.maegic.item.MaegicItem;
+import net.hertz.maegic.network.MaegicMessages;
 import net.hertz.maegic.recipe.Recipes;
 import net.hertz.maegic.registries.MaegicFuelReg;
 import net.hertz.maegic.screen.MaegicScreenHandlers;
@@ -24,5 +25,7 @@ public class Maegic implements ModInitializer {
 
 		MaegicFuelReg.registerFuels();
 		Recipes.registerRecipes();
+
+		MaegicMessages.registerC2SPackets();
 	}
 }
