@@ -1,5 +1,8 @@
 package net.hertz.maegic.block;
 
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
+import net.hertz.maegic.network.MaegicMessages;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
@@ -49,6 +52,9 @@ public class SurgeryBlock extends BlockWithEntity implements BlockEntityProvider
             if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);
             }
+        } else {
+            ClientPlayNetworking.send(MaegicMessages.CYBERWARE_REMOVE, PacketByteBufs.create());
+            //ClientPlayNetworking.send(MaegicMessages.CYBERWARE_SYNC, PacketByteBufs.create());
         }
 
         return ActionResult.SUCCESS;
